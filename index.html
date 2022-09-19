@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bigphotocontainer">
+
+<img id="bigimage" class="big" src="photo1.jpg">
+
+</div>
+
+<div id="smallphotoscontainer">
+
+<img class="smallphotos" src="photo1.jpg">
+<img class="smallphotos" src="photo2.jpg">
+<img class="smallphotos" src="photo3.jpg">
+<img class="smallphotos" src="photo4.jpg">
+<img class="smallphotos" src="photo5.jpg">
+<img class="smallphotos" src="photo6.jpg">
+<img class="smallphotos" src="photo7.jpg">
+<img class="smallphotos" src="photo8.jpg">
+
+</div>
+
+</body>
+
+<script>
+
+alert("Welcome to Photo Album. Mouse over small photos to see it bigger. This photo album was coded by Vedat Sözen")
+
+let allPhotos = document.getElementsByClassName("smallphotos");
+
+for ( let i=0; i<allPhotos.length; i++ ) {
+
+allPhotos[i].addEventListener("mouseover", function() {
+
+document.getElementById("bigimage").src = allPhotos[i].src ;
+
+});
+
+}
+
+
+</script>
+</html>

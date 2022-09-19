@@ -1,0 +1,42 @@
+
+
+
+
+
+
+#bigphotocontainer {
+    margin: auto;
+    height: 420px;
+    width:95vw;
+    border:2px solid bisque;
+    box-sizing: border-box;
+
+}
+
+#bigphotocontainer > img {
+    height: 100%;
+    width: 100%;
+}
+
+#smallphotoscontainer {
+    margin: auto;
+    margin-top: 10px;
+    height:fit-content;
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+}
+
+#smallphotoscontainer > img {
+    height:150px;
+    width:150px;
+    border: 2px solid bisque;
+}
+
+#smallphotoscontainer > img:hover {
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+}
